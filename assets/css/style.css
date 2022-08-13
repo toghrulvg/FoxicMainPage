@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
+    width: 100%;
+    overflow-x: hidden;
+
+   
+   
 }  
 
-#navbar .mein-container{
+.mein-container{
     background-color: white;
     height: 76px;
     
@@ -43,104 +47,477 @@ body{
     color: aqua;
     transition: 0.3s;
 }
-#navbar .icons{
-    width: 100%;
-    height: 100%;
-    background-color: wheat;
+
+
+
+#navbar .mein-container .icons{
+    position: absolute;
+    right: -1320px;
+    
+    display: flex;
+    
+ 
+ }
+ 
+ 
+ #navbar .mein-container  .icons a {
+     padding: 15px;
+     font-size: 25px;
+     color: black;
+     
+ }
+ 
+ #navbar .mein-container  .icons .heart {
+     position: relative;
+     top: 15px;
+ }
+ 
+ #navbar .mein-container  .icons .basket {
+     position: relative;
+     top: 15px;
+ }
+ 
+ #navbar .mein-container  .icons .heart .heart-total {
+     width: 18px;
+     height: 18px;
+     border: 1px solid black;
+     border-radius: 50%;
+     background-color: black;
+     position: absolute;
+     top: 22px;
+     right: 28px;
+ }
+ 
+ 
+ 
+ 
+ #navbar .mein-container .icons .heart .heart-total span {
+     color: white;
+     position: absolute;
+     left: 4px;
+     top: -5px;
+ }
+ 
+ 
+ #navbar .mein-container  .icons .basket .basket-total {
+     width: 18px;
+     height: 18px;
+     border: 1px solid black;
+     border-radius: 50%;
+     background-color: black;
+     position: absolute;
+     top: 22px;
+     right: 28px;
+ }
+ 
+ #navbar .mein-container  .icons .basket .basket-total span {
+     color: white;
+     position: absolute;
+     left: 4px;
+     top: -5px;
+ }
+
+
+
+
+#slider .content{
     position: relative;
-
+    width: 1920px;
+    height: 770px; 
 }
-#navbar .icons .col-6 .left{
+#slider .content img{
     position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: chartreuse;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
-#navbar .icons .col-6 .right{
+#slider .content .texts{
     position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: brown;
-    right: 0;
+    left:300px;
+    top:200px;
+    width: 600px;
+    height: 400px;
+    text-decoration: none;  
 }
-#navbar .icons .col-6 .left .glass{
-    width: 50%;
-    height: 100%;
-    background-color: grey;
-    position: absolute;
-    font-size: 33px;
-    padding-left: 35px;
-    padding-top: 13px;
+#slider .content .texts .take{
+    text-decoration: none; 
+    font-size: 80px;
+    font-weight: 900;
 }
-
-#navbar .icons .col-6 .left .heart{
-    width: 50%;
-    height: 100%;
-    background-color: grey;
-    position: absolute;
-    font-size: 33px;
-    right: 0px;
-    top:0px;
-    padding-left: 35px;
-    padding-top: 13px;
+#slider .content .texts .care{
+    text-decoration: none; 
+    font-size: 80px;
+    color: aquamarine;
+    font-weight: 900;
 }
-#navbar .icons .col-6 .right .person{
-    width: 50%;
-    height: 100%;
-    background-color: grey;
-    position: absolute;
-    font-size: 33px;
-    padding-left: 35px;
-    padding-top: 13px;
-}
-#navbar .icons .col-6 .right .basket{
-    width: 50%;
-    height: 100%;
-    background-color: grey;
-    position: absolute;
-    font-size: 33px;
-    right: 0px;
-    top:0px;
-    padding-left: 35px;
-    padding-top: 13px;
-}
-#navbar .icons .indexx a{
-
-    font-size: 14px;
-}
-#navbar .icons .indexx{
-    position: absolute;
-    width: 19px;
-    height: 19px;
-    color: white;
-    position: absolute;
-    border:1px solid black;
-    background-color: black;
-    border-radius: 50%;
-    right: 58px;
-    bottom: 15px;
-}
-#navbar .icons .index{
-    position: absolute;
-    width: 19px;
-    height: 19px;
-    color: white;
-    position: absolute;
-    border:1px solid black;
-    background-color: black;
-    border-radius: 50%;
-    bottom: 15px;
-    left: 30px;
+#slider .content .texts .of{
+    text-decoration: none; 
+    font-size: 80px;
+    color: aquamarine;
+    font-weight: 900;
 }
 
-#navbar .icons .sc{
-    left: 10px;
+#slider .content .texts .health{
+    text-decoration: none; 
+    font-size: 80px;
+    font-weight: 900;
 }
-#navbar .icons .nmbr{
+#slider .content .texts .lorem{
+    text-emphasis: none;
+    text-decoration: none; 
+    font-size: 20px;
+}
+#slider .content .texts .btnn{
+    border-radius: 20px;
+}
+#info .qwe{
+    background-color: white;
+}
+#info .truck{
+    position: relative;
+}
+
+#info .truck-icon{
     position: absolute;
-    color: white;
+    font-size: 30px;
+    top: 13px;
+}
+#info .truck-heading{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+#info .truck-text{
+    position: absolute;
+    left: 50px;
+    top: 35px;
+}
+
+#arrivals {
+    position: relative;
+}
+
+#arrivals .spray{
+    height: 411px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    
     
 }
-.basket .nmbrr{
+#arrivals .spray a{
     position: absolute;
+    font-size: 14px;
+    color:yellow;
+    bottom: 15px;
+    left:114px;
+
+    
+}
+#arrivals .spray h6{
+    position: absolute;
+    bottom: 35px;
+    left:134px;
+}
+#arrivals .spray h5{
+    position: absolute;
+    bottom: 55px;
+    left:36px;
+}
+#arrivals .spray span{
+    color: gray;
+    position: absolute;
+    bottom: 85px;
+    left:134px;
+}
+#arrivals .spray img{
+    position: absolute;
+    width: 100%;
+    height: 290px;
+    left: 0px;
+}
+#arrivals .mask{
+    height: 411px;
+    background-color: brown;
+    position: relative;
+}
+#arrivals .mask{
+    height: 411px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    
+    
+}
+#arrivals .mask a{
+    position: absolute;
+    font-size: 14px;
+    color:yellow;
+    bottom: 15px;
+    left:114px;
+
+    
+}
+#arrivals .mask h6{
+    position: absolute;
+    bottom: 35px;
+    left:134px;
+}
+#arrivals .mask h5{
+    position: absolute;
+    bottom: 55px;
+    left:6px;
+}
+#arrivals .mask span{
+    color: gray;
+    position: absolute;
+    bottom: 85px;
+    left:134px;
+}
+#arrivals .mask img{
+    position: absolute;
+    width: 100%;
+    height: 290px;
+    left: 0px;
+}
+#arrivals .infrared{
+    height: 411px;
+    background-color: white;
+    position: relative;
+}
+#arrivals .infrared{
+    height: 411px;
+    position: relative;
+    text-align: center;
+    
+    
+}
+#arrivals .infrared a{
+    position: absolute;
+    font-size: 14px;
+    color:yellow;
+    bottom: 15px;
+    left:114px;
+
+    
+}
+#arrivals .infrared h6{
+    position: absolute;
+    bottom: 35px;
+    left:134px;
+}
+#arrivals .infrared h5{
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+}
+#arrivals .infrared span{
+    color: gray;
+    position: absolute;
+    bottom: 85px;
+    left:134px;
+}
+#arrivals .infrared img{
+    position: absolute;
+    width: 100%;
+    height: 290px;
+    left: 0px;
+}
+
+#arrivals .termometer{
+    height: 411px;
+    background-color: white;
+    position: relative;
+}
+#arrivals .termometer{
+    height: 411px;
+    position: relative;
+    text-align: center;
+    
+    
+}
+#arrivals .termometer a{
+    position: absolute;
+    font-size: 14px;
+    color:yellow;
+    bottom: 15px;
+    left:114px;
+
+    
+}
+#arrivals .termometer h6{
+    position: absolute;
+    bottom: 35px;
+    left:134px;
+}
+#arrivals .termometer h5{
+    position: absolute;
+    bottom: 55px;
+    left:36px;
+}
+#arrivals .termometer span{
+    color: gray;
+    position: absolute;
+    bottom: 85px;
+    left:134px;
+}
+#arrivals .termometer img{
+    position: absolute;
+    width: 100%;
+    height: 290px;
+    left: 0px;
+}
+#arrivals .arriveds span{
+    position: absolute;
+    top: 3px;
+    right: 310px;
+}
+#images-5 .one{
+    position: relative;
+    width: 100%;
+    height: 534px;
+}
+#images-5 .cont{
+    position: relative;
+}
+#images-5 .two{
+    width: 410px;
+    height: 251px;
+    position: absolute;
+}
+#images-5 .three{
+    width: 410px;
+    height: 251px;
+    position: absolute;
+    right: 0px;
+}
+#images-5 .four{
+    width: 410px;
+    height: 251px;
+    position: absolute;
+    left: 11px;
+    bottom: 0px;
+}
+#images-5 .five{
+    width: 410px;
+    height: 251px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+#images-5 img{
+    width: 100%;
+    height: 100%;
+}
+#images-5 .one-text{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    bottom: 0px;
+    right: 0px;
+}
+#images-5 .one-text a{
+    font-size: 24px;
+    color: white
+}
+#images-5 .one-text h1{
+    font-size: 64px;
+    color: white;
+    font-weight: 800px;
+}
+#images-5 .one-text .bttn{
+    border-radius: 20px;
+    width: 140px;
+}
+#images-5 .two-text{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top:45px;
+    left: 40PX; 
+}
+
+#images-5 .two-text h1{
+    font-weight: 800;
+    font-size: 34px;
+    color: black;
+    font-weight: 800px;
+}
+#images-5 .two-text .bttn{
+    border-radius: 20px;
+    width: 140px;
+}
+#images-5 .three-text{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+#images-5 .three-text a{
+    font-size: 24px;
+    color: white
+}
+#images-5 .three-text h1{
+    font-size: 34px;
+    color: white;
+    font-weight: 800px;
+}
+#images-5 .three-text .bttn{
+    border-radius: 20px;
+    width: 140px;
+}
+#images-5 .four-text{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 70px; 
+}
+
+#images-5 .four-text h1{
+    font-weight: 800;
+    font-size: 34px;
+    color: black;
+    font-weight: 800px;
+}
+#images-5 .four-text .bttn{
+    border-radius: 20px;
+    width: 140px;
+}
+#images-5 .five-text{
+    position: absolute;
+    width: 140px;
+    height: 90px;
+    margin-top: 60px;
+    margin-left: 240px;
+}
+#images-5 .five-text a{
+    font-size: 15px;
+    color: white
+}
+#images-5 .five-text h1{
+    font-size: 30px;
+    font-weight: 800px;
+    color: white;
+    font-weight: 800px;
+}
+#images-5 .five-text .bttn{
+    border-radius: 20px;
+    width: 140px;
+}
+#stay .covid-info{
+    background-color: blue;
+    height: 226px;
+
+}
+#stay .covid-img{
+    position: absolute;
+    height: 226px;
+    width: 550px;
+    background-color: blue;
+
+}
+#stay .covid-img{
+    width: 100%
 }
