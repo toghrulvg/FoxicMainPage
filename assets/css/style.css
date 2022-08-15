@@ -50,21 +50,14 @@ body{
 
 #navbar .mein-container .icons{
     position: absolute;
-    right: -1320px;
-    
+    right:100px;
     display: flex;
-    
- 
  }
- 
- 
  #navbar .mein-container  .icons a {
      padding: 15px;
      font-size: 25px;
      color: black;
-     
  }
- 
  #navbar .mein-container  .icons .heart {
      position: relative;
      top: 15px;
@@ -114,10 +107,6 @@ body{
      left: 4px;
      top: -5px;
  }
-
-
-
-
 #slider .content{
     position: relative;
     width: 1920px;
@@ -209,8 +198,6 @@ body{
     color:yellow;
     bottom: 15px;
     left:114px;
-
-    
 }
 #arrivals .spray h6{
     position: absolute;
@@ -836,3 +823,34 @@ body{
     color: rgb(57, 208, 219);
     transition: 0.3s;
   }
+  @media screen and (max-width: 992px) {
+    #precautions .mini-pic {
+        height: 250px;
+        background-color: white;
+        margin-top: 50px;
+    }
+    #precautions .mini-pic .mp img {
+        position: absolute;
+        left: 194px;
+        top: 66px;
+    }
+    #navbar .mein-list{
+        display: none;
+    }
+    }
+    @media screen and (max-width: 768px) {
+        #precautions .mini-pic {
+            height: 250px;
+            background-color: white;
+            margin-top: 50px;
+        }
+        #precautions .mini-pic .mp img {
+            position: absolute;
+            left: 194px;
+            top: 66px;
+        }
+
+        }
+      
+
+  
